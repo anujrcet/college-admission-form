@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCET BHILAI</title>
+    <style>
+.containar{
+    border: 2px solid red;
+    width: 800px;
+    /* height: 800px; */
+    background-color: rgb(162, 179, 123);
+}
+header{
+    background-color: bisque;
+    text-transform: capitalize;
+    padding: 10px 10px;
+
+}
+.college-name{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    /* text-shadow: 5px 5px rgb(166, 78, 78); */
+    font-size: 30px;
+    
+}
+.admission{
+    /* border: 2px solid red; */
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(226, 164, 142);
+}
+form{
+    padding: 5px 35px;
+}
+input[type=text], input[type=date], select{
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    /* margin-bottom: 5px; */
+}
+p{
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    
+
+}
+fieldset{
+    background-color: white;
+}
+input[type=reset],input[type=submit]{
+    padding: 5px 5px;
+    margin-left: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+    background-color: rgb(47, 199, 47);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type=reset]{
+    background-color: rgb(234, 88, 88);
+}
+
+    </style>
+</head>
+<body>
+    <div class="containar">
+        <header>
+            <h1 class="college-name">Rungta college of engineering and technology r1</h1>
+            <h2 class="admission">college admission form</h2>
+        </header>
+        <form action="">
+            <p>
+                Applicant name: <br>
+                <input type="text" name="aname" placeholder="Enter your name">
+                </p>
+                <p>
+                    Applicant father name: <br>
+                    <input type="text" name="fname" placeholder="enter your father name">
+                </p>
+                <p>
+                    Applicant mother name: <br>
+                    <input type="text" name="mname" placeholder="enter your mother name">
+                </p>
+                <p>
+                    date of birth: <br>
+                    <input type="date" name="dob" placeholder="dd/mm/yyyy">
+                </p>
+                <p>Gender: 
+                    <fieldset>
+                    
+                    male <input type="radio" name="gender">
+                    female <input type="radio" name="gender">
+                </fieldset>
+                </p>
+                <p>
+                    select your course: <br>
+                    <select name="course" id="">
+                        <option value="">select your course</option>
+                        <option value="btech">btech</option>
+                        <option value="mtech">mtech</option>
+                        <option value="bca">bca</option>
+                        <option value="mca">mca</option>
+                    </select>
+                </p>
+                <p class="btn">
+                    <input type="reset" value="reset">
+                    <input type="submit" value="submit">
+                </p>
+
+        </form>
+    </div>
+</body>
+</html>
